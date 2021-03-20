@@ -1,0 +1,26 @@
+class Factorial{
+    public static void main(String[] a){
+	System.out.println(new Fac().ComputeFac(10));
+    }
+}
+/* this is a comment */
+
+// this is another comment
+
+class Fac {
+    public int ComputeFac(int num){
+	int num_aux ;
+
+	/* this is a
+	longer comment
+	in a different
+	place */
+
+	if (num < 5? 1 < num : num < 10)
+	    num_aux = 1 ;
+	else
+	    num_aux = (!(num<11) && !(11<num)) ? num : 0 * (this.ComputeFac(num - 1));
+
+    return num_aux<1 ? 1 : num_aux;
+    }
+}
